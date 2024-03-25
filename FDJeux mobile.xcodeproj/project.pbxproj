@@ -14,6 +14,12 @@
 		8AC985F22BA8A9E700A0F077 /* FDJeux_mobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC985F12BA8A9E700A0F077 /* FDJeux_mobileTests.swift */; };
 		8AC985FC2BA8A9E700A0F077 /* FDJeux_mobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC985FB2BA8A9E700A0F077 /* FDJeux_mobileUITests.swift */; };
 		8AC985FE2BA8A9E700A0F077 /* FDJeux_mobileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC985FD2BA8A9E700A0F077 /* FDJeux_mobileUITestsLaunchTests.swift */; };
+		8AC9860F2BA8B08000A0F077 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9860E2BA8B08000A0F077 /* LoginView.swift */; };
+		8AC986112BA8B21700A0F077 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC986102BA8B21700A0F077 /* URL.swift */; };
+		8AC986132BA8B5B100A0F077 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC986122BA8B5B100A0F077 /* UserModel.swift */; };
+		8AC986152BA8B68900A0F077 /* keychainAuthServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC986142BA8B68900A0F077 /* keychainAuthServiceModel.swift */; };
+		8AC986172BA8B93400A0F077 /* authViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC986162BA8B93400A0F077 /* authViewModel.swift */; };
+		8AC986192BA8CDF700A0F077 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC986182BA8CDF600A0F077 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		8AC985F72BA8A9E700A0F077 /* FDJeux mobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FDJeux mobileUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC985FB2BA8A9E700A0F077 /* FDJeux_mobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJeux_mobileUITests.swift; sourceTree = "<group>"; };
 		8AC985FD2BA8A9E700A0F077 /* FDJeux_mobileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJeux_mobileUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8AC9860E2BA8B08000A0F077 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8AC986102BA8B21700A0F077 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		8AC986122BA8B5B100A0F077 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8AC986142BA8B68900A0F077 /* keychainAuthServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keychainAuthServiceModel.swift; sourceTree = "<group>"; };
+		8AC986162BA8B93400A0F077 /* authViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authViewModel.swift; sourceTree = "<group>"; };
+		8AC986182BA8CDF600A0F077 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +106,14 @@
 		8AC985DF2BA8A9E400A0F077 /* FDJeux mobile */ = {
 			isa = PBXGroup;
 			children = (
+				8AC9860D2BA8AEDD00A0F077 /* Views */,
+				8AC9860C2BA8AE8800A0F077 /* ViewModels */,
+				8AC9860B2BA8AE7F00A0F077 /* Models */,
 				8AC985E02BA8A9E400A0F077 /* FDJeux_mobileApp.swift */,
 				8AC985E22BA8A9E400A0F077 /* ContentView.swift */,
 				8AC985E42BA8A9E600A0F077 /* Assets.xcassets */,
 				8AC985E62BA8A9E600A0F077 /* Preview Content */,
+				8AC986102BA8B21700A0F077 /* URL.swift */,
 			);
 			path = "FDJeux mobile";
 			sourceTree = "<group>";
@@ -125,6 +141,32 @@
 				8AC985FD2BA8A9E700A0F077 /* FDJeux_mobileUITestsLaunchTests.swift */,
 			);
 			path = "FDJeux mobileUITests";
+			sourceTree = "<group>";
+		};
+		8AC9860B2BA8AE7F00A0F077 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8AC986122BA8B5B100A0F077 /* UserModel.swift */,
+				8AC986142BA8B68900A0F077 /* keychainAuthServiceModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8AC9860C2BA8AE8800A0F077 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8AC986162BA8B93400A0F077 /* authViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8AC9860D2BA8AEDD00A0F077 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8AC9860E2BA8B08000A0F077 /* LoginView.swift */,
+				8AC986182BA8CDF600A0F077 /* RegisterView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AC9860F2BA8B08000A0F077 /* LoginView.swift in Sources */,
+				8AC986172BA8B93400A0F077 /* authViewModel.swift in Sources */,
+				8AC986152BA8B68900A0F077 /* keychainAuthServiceModel.swift in Sources */,
 				8AC985E32BA8A9E400A0F077 /* ContentView.swift in Sources */,
 				8AC985E12BA8A9E400A0F077 /* FDJeux_mobileApp.swift in Sources */,
+				8AC986192BA8CDF700A0F077 /* RegisterView.swift in Sources */,
+				8AC986132BA8B5B100A0F077 /* UserModel.swift in Sources */,
+				8AC986112BA8B21700A0F077 /* URL.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var authSession = AuthenticationSession() // Utilisez AuthenticationSession
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        if authSession.isLoggedIn {
+            //NavBarView()
+            Text("Bienvenue dans votre application")
+            ProtectedContentView()
+                .onTapGesture {
+                    authSession.signOut()
+                }
+        } else {
+            // Afficher l'écran de connexion
+            LoginView(authSession: authSession) // Assurez-vous que LoginView peut accepter un authSession
         }
-        .padding()
+    }
+}
+
+
+struct ProtectedContentView: View {
+    var body: some View {
+        Text("Bienvenue dans votre application")
     }
 }
 
