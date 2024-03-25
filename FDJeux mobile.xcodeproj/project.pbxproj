@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A9E98942BB177CD00F2EFCD /* InfosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98932BB177CD00F2EFCD /* InfosModel.swift */; };
+		8A9E98962BB1781A00F2EFCD /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98952BB1781A00F2EFCD /* NewsModel.swift */; };
+		8A9E98982BB1783F00F2EFCD /* CurrentFestivalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98972BB1783F00F2EFCD /* CurrentFestivalModel.swift */; };
+		8A9E989A2BB1792600F2EFCD /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98992BB1792600F2EFCD /* NewsViewModel.swift */; };
+		8A9E989C2BB17B5000F2EFCD /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E989B2BB17B5000F2EFCD /* NewsView.swift */; };
+		8A9E989E2BB1923200F2EFCD /* NavbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E989D2BB1923200F2EFCD /* NavbarView.swift */; };
+		8A9E98A02BB1926900F2EFCD /* PlanGeneralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E989F2BB1926900F2EFCD /* PlanGeneralView.swift */; };
+		8A9E98A22BB1928200F2EFCD /* PlanPersoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98A12BB1928200F2EFCD /* PlanPersoView.swift */; };
+		8A9E98A42BB192B100F2EFCD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98A32BB192B100F2EFCD /* HomeView.swift */; };
+		8A9E98A62BB192BE00F2EFCD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98A52BB192BE00F2EFCD /* ProfileView.swift */; };
+		8A9E98A82BB20BFA00F2EFCD /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98A72BB20BFA00F2EFCD /* InfoViewModel.swift */; };
+		8A9E98AA2BB20D8500F2EFCD /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98A92BB20D8500F2EFCD /* InfoView.swift */; };
+		8A9E98AC2BB20E3F00F2EFCD /* CurrentFestivalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98AB2BB20E3F00F2EFCD /* CurrentFestivalViewModel.swift */; };
+		8A9E98AE2BB213BE00F2EFCD /* CurrentFestivalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98AD2BB213BE00F2EFCD /* CurrentFestivalView.swift */; };
 		8AC985E12BA8A9E400A0F077 /* FDJeux_mobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC985E02BA8A9E400A0F077 /* FDJeux_mobileApp.swift */; };
 		8AC985E32BA8A9E400A0F077 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC985E22BA8A9E400A0F077 /* ContentView.swift */; };
 		8AC985E52BA8A9E600A0F077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC985E42BA8A9E600A0F077 /* Assets.xcassets */; };
@@ -17,8 +31,8 @@
 		8AC9860F2BA8B08000A0F077 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC9860E2BA8B08000A0F077 /* LoginView.swift */; };
 		8AC986112BA8B21700A0F077 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC986102BA8B21700A0F077 /* URL.swift */; };
 		8AC986132BA8B5B100A0F077 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC986122BA8B5B100A0F077 /* UserModel.swift */; };
-		8AC986152BA8B68900A0F077 /* keychainAuthServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC986142BA8B68900A0F077 /* keychainAuthServiceModel.swift */; };
-		8AC986172BA8B93400A0F077 /* authViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC986162BA8B93400A0F077 /* authViewModel.swift */; };
+		8AC986152BA8B68900A0F077 /* KeychainAuthServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC986142BA8B68900A0F077 /* KeychainAuthServiceModel.swift */; };
+		8AC986172BA8B93400A0F077 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC986162BA8B93400A0F077 /* AuthViewModel.swift */; };
 		8AC986192BA8CDF700A0F077 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC986182BA8CDF600A0F077 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +54,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A9E98932BB177CD00F2EFCD /* InfosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosModel.swift; sourceTree = "<group>"; };
+		8A9E98952BB1781A00F2EFCD /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		8A9E98972BB1783F00F2EFCD /* CurrentFestivalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFestivalModel.swift; sourceTree = "<group>"; };
+		8A9E98992BB1792600F2EFCD /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		8A9E989B2BB17B5000F2EFCD /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		8A9E989D2BB1923200F2EFCD /* NavbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavbarView.swift; sourceTree = "<group>"; };
+		8A9E989F2BB1926900F2EFCD /* PlanGeneralView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanGeneralView.swift; sourceTree = "<group>"; };
+		8A9E98A12BB1928200F2EFCD /* PlanPersoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanPersoView.swift; sourceTree = "<group>"; };
+		8A9E98A32BB192B100F2EFCD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8A9E98A52BB192BE00F2EFCD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		8A9E98A72BB20BFA00F2EFCD /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
+		8A9E98A92BB20D8500F2EFCD /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		8A9E98AB2BB20E3F00F2EFCD /* CurrentFestivalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFestivalViewModel.swift; sourceTree = "<group>"; };
+		8A9E98AD2BB213BE00F2EFCD /* CurrentFestivalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFestivalView.swift; sourceTree = "<group>"; };
 		8AC985DD2BA8A9E400A0F077 /* FDJeux mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FDJeux mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC985E02BA8A9E400A0F077 /* FDJeux_mobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJeux_mobileApp.swift; sourceTree = "<group>"; };
 		8AC985E22BA8A9E400A0F077 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,8 +81,8 @@
 		8AC9860E2BA8B08000A0F077 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		8AC986102BA8B21700A0F077 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
 		8AC986122BA8B5B100A0F077 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		8AC986142BA8B68900A0F077 /* keychainAuthServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keychainAuthServiceModel.swift; sourceTree = "<group>"; };
-		8AC986162BA8B93400A0F077 /* authViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = authViewModel.swift; sourceTree = "<group>"; };
+		8AC986142BA8B68900A0F077 /* KeychainAuthServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAuthServiceModel.swift; sourceTree = "<group>"; };
+		8AC986162BA8B93400A0F077 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		8AC986182BA8CDF600A0F077 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +175,10 @@
 			isa = PBXGroup;
 			children = (
 				8AC986122BA8B5B100A0F077 /* UserModel.swift */,
-				8AC986142BA8B68900A0F077 /* keychainAuthServiceModel.swift */,
+				8AC986142BA8B68900A0F077 /* KeychainAuthServiceModel.swift */,
+				8A9E98932BB177CD00F2EFCD /* InfosModel.swift */,
+				8A9E98952BB1781A00F2EFCD /* NewsModel.swift */,
+				8A9E98972BB1783F00F2EFCD /* CurrentFestivalModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,7 +186,10 @@
 		8AC9860C2BA8AE8800A0F077 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				8AC986162BA8B93400A0F077 /* authViewModel.swift */,
+				8AC986162BA8B93400A0F077 /* AuthViewModel.swift */,
+				8A9E98992BB1792600F2EFCD /* NewsViewModel.swift */,
+				8A9E98A72BB20BFA00F2EFCD /* InfoViewModel.swift */,
+				8A9E98AB2BB20E3F00F2EFCD /* CurrentFestivalViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -165,6 +199,14 @@
 			children = (
 				8AC9860E2BA8B08000A0F077 /* LoginView.swift */,
 				8AC986182BA8CDF600A0F077 /* RegisterView.swift */,
+				8A9E989B2BB17B5000F2EFCD /* NewsView.swift */,
+				8A9E989D2BB1923200F2EFCD /* NavbarView.swift */,
+				8A9E989F2BB1926900F2EFCD /* PlanGeneralView.swift */,
+				8A9E98A12BB1928200F2EFCD /* PlanPersoView.swift */,
+				8A9E98A32BB192B100F2EFCD /* HomeView.swift */,
+				8A9E98A52BB192BE00F2EFCD /* ProfileView.swift */,
+				8A9E98A92BB20D8500F2EFCD /* InfoView.swift */,
+				8A9E98AD2BB213BE00F2EFCD /* CurrentFestivalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,13 +342,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AC9860F2BA8B08000A0F077 /* LoginView.swift in Sources */,
-				8AC986172BA8B93400A0F077 /* authViewModel.swift in Sources */,
-				8AC986152BA8B68900A0F077 /* keychainAuthServiceModel.swift in Sources */,
+				8A9E98A02BB1926900F2EFCD /* PlanGeneralView.swift in Sources */,
+				8AC986172BA8B93400A0F077 /* AuthViewModel.swift in Sources */,
+				8AC986152BA8B68900A0F077 /* KeychainAuthServiceModel.swift in Sources */,
 				8AC985E32BA8A9E400A0F077 /* ContentView.swift in Sources */,
+				8A9E98A42BB192B100F2EFCD /* HomeView.swift in Sources */,
+				8A9E98962BB1781A00F2EFCD /* NewsModel.swift in Sources */,
+				8A9E98982BB1783F00F2EFCD /* CurrentFestivalModel.swift in Sources */,
+				8A9E98AA2BB20D8500F2EFCD /* InfoView.swift in Sources */,
 				8AC985E12BA8A9E400A0F077 /* FDJeux_mobileApp.swift in Sources */,
+				8A9E98A82BB20BFA00F2EFCD /* InfoViewModel.swift in Sources */,
+				8A9E989C2BB17B5000F2EFCD /* NewsView.swift in Sources */,
+				8A9E98A62BB192BE00F2EFCD /* ProfileView.swift in Sources */,
+				8A9E989E2BB1923200F2EFCD /* NavbarView.swift in Sources */,
 				8AC986192BA8CDF700A0F077 /* RegisterView.swift in Sources */,
 				8AC986132BA8B5B100A0F077 /* UserModel.swift in Sources */,
+				8A9E98AE2BB213BE00F2EFCD /* CurrentFestivalView.swift in Sources */,
 				8AC986112BA8B21700A0F077 /* URL.swift in Sources */,
+				8A9E98AC2BB20E3F00F2EFCD /* CurrentFestivalViewModel.swift in Sources */,
+				8A9E98A22BB1928200F2EFCD /* PlanPersoView.swift in Sources */,
+				8A9E98942BB177CD00F2EFCD /* InfosModel.swift in Sources */,
+				8A9E989A2BB1792600F2EFCD /* NewsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

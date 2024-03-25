@@ -33,10 +33,8 @@ struct ConnectedUser: Codable {
 enum UserError: Error {
     case credentialsUnavailable
     case serverError
-    // Other error cases as necessary
 }
 
-// Fetches the current user's details from the API
 func fetchCurrentUser(completion: @escaping (Result<User, Error>) -> Void) {
     guard let token = AuthenticationManager.shared.fetchToken(),
           let userId = AuthenticationManager.shared.fetchUserId() else {
@@ -67,8 +65,7 @@ func fetchCurrentUser(completion: @escaping (Result<User, Error>) -> Void) {
     }.resume()
 }
 
-// Updates user profile information on the server
-func updateProfile(email: String, phone: String, association: String, nickname: String, address: String, completion: @escaping (Result<User, Error>) -> Void) {
+func updateProfile(email: String, phone: String, association: String, pseudo: String, address: String, completion: @escaping (Result<User, Error>) -> Void) {
     guard let token = AuthenticationManager.shared.fetchToken(),
           let userId = AuthenticationManager.shared.fetchUserId() else {
         completion(.failure(UserError.credentialsUnavailable))
@@ -88,7 +85,7 @@ func updateProfile(email: String, phone: String, association: String, nickname: 
         "email": email,
         "phone": phone,
         "association": association,
-        "nickname": nickname,
+        "pseudo": pseudo,
         "postalAddress": address
     ]
     
@@ -118,7 +115,6 @@ func updateProfile(email: String, phone: String, association: String, nickname: 
     }
 }
 
-// Example function for updating user information related to a festival
 func updateUserForFestival(userId: String, festivalId: Int, isFlexible: Bool, completion: @escaping (Result<User, Error>) -> Void) {
     guard let token = AuthenticationManager.shared.fetchToken() else {
         completion(.failure(UserError.credentialsUnavailable))

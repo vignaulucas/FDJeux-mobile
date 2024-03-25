@@ -12,7 +12,6 @@ struct RegisterView: View {
     //gerer la connexion
     @ObservedObject var AuthenticationManager : AuthenticationSession
     
-    // Variables d'état pour les champs de saisie de l'inscription
     @State private var pseudo = ""
     @State private var password = ""
     @State private var confirmPassword = ""
@@ -21,9 +20,10 @@ struct RegisterView: View {
     @State private var lastName = ""
     @State private var telephone = ""
     
-    // Variable d'état pour afficher une alerte en cas d'erreur d'inscription
     @State private var showAlert = false
     @State private var alertMessage = ""
+    
+    @State private var isShowingLoginView = false
     
     @State private var user : ConnectedUser? = nil
     
@@ -45,7 +45,6 @@ struct RegisterView: View {
                         .bold()
                     
                     
-                    // Champ de saisie pour le prénom et le nom de famille sur la même ligne
                     HStack {
                         TextField("Prénom", text: $firstName)
                             .padding()
@@ -60,7 +59,6 @@ struct RegisterView: View {
                             .cornerRadius(10)
                     }
                     
-                    // Champ de saisie pour l'identifiant et le téléphone sur la même ligne
                     HStack {
                         TextField("Pseudo", text: $pseudo)
                             .padding()
@@ -96,9 +94,8 @@ struct RegisterView: View {
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                     
-                    // Bouton d'inscription
                     Button("S'inscrire") {
-                        // Ajouter ici la logique d'inscription
+                        registerUser()
                     }
                     .foregroundColor(.white)
                     .frame(width: 300, height: 50)
@@ -107,7 +104,10 @@ struct RegisterView: View {
                     
                     // Bouton pour aller sur la page de connexion
                     Button("Déjà inscrit ?") {
-                        registerUser()
+                        isShowingLoginView = true
+                    }
+                    .sheet(isPresented: $isShowingLoginView) {
+                        LoginView(authSession: AuthenticationManager)
                     }
                     .foregroundColor(.blue)
                     .padding(.top, 10)
@@ -155,7 +155,7 @@ struct RegisterView: View {
         }
         
         // Envoi des données à l'API
-        guard let url = URL(string: "https://apifdjeux-2.onrender.com/user") else {
+        guard let url = URL(string: "\(urlAPI)/user/") else {
             // Gérer l'erreur
             return
         }

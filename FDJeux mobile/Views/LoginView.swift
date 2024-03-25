@@ -56,8 +56,11 @@ struct LoginView: View {
                     
                     // Bouton pour aller vers la page d'inscription
                     Button("Pas encore inscrit ?") {
-                        navigationTarget = .register // Modification ici pour utiliser la nouvelle propriété renommée
-                    }
+                                    isShowingRegisterView = true
+                                }
+                                .sheet(isPresented: $isShowingRegisterView) {
+                                    RegisterView(AuthenticationManager: authSession)
+                                }
                     .foregroundColor(.blue)
                     .padding()
                 }
@@ -78,8 +81,7 @@ struct LoginView: View {
     
     // Fonction pour récupérer les données de l'API
     func loginUser() {
-        print("je suis là")
-        guard let url = URL(string: "http://localhost:8080/user/login") else {
+        guard let url = URL(string: "\(urlAPI)/user/login") else {
             return
         }
         
@@ -110,7 +112,6 @@ struct LoginView: View {
                     // Désérialisation des données JSON en un objet UserConnected
                     print(String(data: data, encoding: .utf8) ?? "coucou")
                     let decodedData = try JSONDecoder().decode(ConnectedUser.self, from: data)
-                    print("coucou")
                     DispatchQueue.main.async {
                         self.user = decodedData
                         // Vérification des informations de connexion ici
