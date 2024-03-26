@@ -17,9 +17,9 @@ struct NavBarView: View {
 //            if selected == "person"{
 //                PlanningPersoView()
 //            }
-//            if selected == "gear"{
-//                ProfileView()
-//            }
+            if selected == "gear"{
+                CustomProfileView()
+            }
             navBar
                 
         }.edgesIgnoringSafeArea(.bottom)

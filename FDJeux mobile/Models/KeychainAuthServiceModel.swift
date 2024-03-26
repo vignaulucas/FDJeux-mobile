@@ -73,9 +73,7 @@ class AuthenticationManager {
         }
         print("Token supprimé.")
     }
-    
-    // MARK: - Keychain Interaction Helpers
-    
+        
     private func saveToKeychain(data: Data, forKey key: String) -> Bool {
         let query: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,

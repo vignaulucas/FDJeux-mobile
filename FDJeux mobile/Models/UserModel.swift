@@ -81,12 +81,12 @@ func updateProfile(email: String, phone: String, association: String, pseudo: St
     request.addValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
     
     let body: [String: Any] = [
-        "userId": userId,
+        "idUser": userId,
         "email": email,
-        "phone": phone,
+        "telephone": phone,
         "association": association,
         "pseudo": pseudo,
-        "postalAddress": address
+        "postalAdress": address
     ]
     
     do {

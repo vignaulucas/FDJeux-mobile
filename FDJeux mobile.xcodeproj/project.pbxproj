@@ -21,6 +21,7 @@
 		8A9E98AA2BB20D8500F2EFCD /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98A92BB20D8500F2EFCD /* InfoView.swift */; };
 		8A9E98AC2BB20E3F00F2EFCD /* CurrentFestivalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98AB2BB20E3F00F2EFCD /* CurrentFestivalViewModel.swift */; };
 		8A9E98AE2BB213BE00F2EFCD /* CurrentFestivalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98AD2BB213BE00F2EFCD /* CurrentFestivalView.swift */; };
+		8A9E98B02BB2329300F2EFCD /* SlotsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98AF2BB2329200F2EFCD /* SlotsModel.swift */; };
 		8AC985E12BA8A9E400A0F077 /* FDJeux_mobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC985E02BA8A9E400A0F077 /* FDJeux_mobileApp.swift */; };
 		8AC985E32BA8A9E400A0F077 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC985E22BA8A9E400A0F077 /* ContentView.swift */; };
 		8AC985E52BA8A9E600A0F077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC985E42BA8A9E600A0F077 /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		8A9E98A92BB20D8500F2EFCD /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		8A9E98AB2BB20E3F00F2EFCD /* CurrentFestivalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFestivalViewModel.swift; sourceTree = "<group>"; };
 		8A9E98AD2BB213BE00F2EFCD /* CurrentFestivalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFestivalView.swift; sourceTree = "<group>"; };
+		8A9E98AF2BB2329200F2EFCD /* SlotsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsModel.swift; sourceTree = "<group>"; };
 		8AC985DD2BA8A9E400A0F077 /* FDJeux mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FDJeux mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC985E02BA8A9E400A0F077 /* FDJeux_mobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJeux_mobileApp.swift; sourceTree = "<group>"; };
 		8AC985E22BA8A9E400A0F077 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				8A9E98932BB177CD00F2EFCD /* InfosModel.swift */,
 				8A9E98952BB1781A00F2EFCD /* NewsModel.swift */,
 				8A9E98972BB1783F00F2EFCD /* CurrentFestivalModel.swift */,
+				8A9E98AF2BB2329200F2EFCD /* SlotsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				8A9E98A02BB1926900F2EFCD /* PlanGeneralView.swift in Sources */,
 				8AC986172BA8B93400A0F077 /* AuthViewModel.swift in Sources */,
 				8AC986152BA8B68900A0F077 /* KeychainAuthServiceModel.swift in Sources */,
+				8A9E98B02BB2329300F2EFCD /* SlotsModel.swift in Sources */,
 				8AC985E32BA8A9E400A0F077 /* ContentView.swift in Sources */,
 				8A9E98A42BB192B100F2EFCD /* HomeView.swift in Sources */,
 				8A9E98962BB1781A00F2EFCD /* NewsModel.swift in Sources */,
