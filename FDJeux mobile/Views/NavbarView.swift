@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct NavBarView: View {
-    var images : [String] = ["house","calendar","person","gear"]
+    var images : [String] = ["house","calendar","person", "gamecontroller", "gear"]
     @State var selected = "house"
     @Namespace private var namespace
     var logoutAction: () -> Void
@@ -16,6 +16,9 @@ struct NavBarView: View {
 //            }
             if selected == "person"{
                 PlanningPersoView()
+            }
+            if selected == "gamecontroller" {
+                GameZoneView()
             }
             if selected == "gear"{
                 CustomProfileView()
@@ -69,7 +72,7 @@ extension NavBarView{
                                 Image(systemName: selected)
                                     .font(.title3.bold())
                                     .foregroundColor(.primary)
-                                    .padding(.horizontal,40)
+                                    .padding(.horizontal,2)
                                     .offset(y:-30)
                                     .matchedGeometryEffect(id: "let2", in: namespace)
                                     .shadow(color: .black.opacity(0.5), radius: 10, x: 0, y: 0)

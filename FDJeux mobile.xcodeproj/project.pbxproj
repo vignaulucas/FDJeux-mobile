@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8A96F0F42BB32C6500D78240 /* GameZoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96F0F32BB32C6500D78240 /* GameZoneModel.swift */; };
+		8A96F0F62BB32DCD00D78240 /* GameZoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96F0F52BB32DCD00D78240 /* GameZoneViewModel.swift */; };
+		8A96F0F82BB32ED500D78240 /* GameZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96F0F72BB32ED500D78240 /* GameZoneView.swift */; };
 		8A9E98942BB177CD00F2EFCD /* InfosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98932BB177CD00F2EFCD /* InfosModel.swift */; };
 		8A9E98962BB1781A00F2EFCD /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98952BB1781A00F2EFCD /* NewsModel.swift */; };
 		8A9E98982BB1783F00F2EFCD /* CurrentFestivalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98972BB1783F00F2EFCD /* CurrentFestivalModel.swift */; };
@@ -59,6 +61,8 @@
 
 /* Begin PBXFileReference section */
 		8A96F0F32BB32C6500D78240 /* GameZoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameZoneModel.swift; sourceTree = "<group>"; };
+		8A96F0F52BB32DCD00D78240 /* GameZoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameZoneViewModel.swift; sourceTree = "<group>"; };
+		8A96F0F72BB32ED500D78240 /* GameZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameZoneView.swift; sourceTree = "<group>"; };
 		8A9E98932BB177CD00F2EFCD /* InfosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosModel.swift; sourceTree = "<group>"; };
 		8A9E98952BB1781A00F2EFCD /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		8A9E98972BB1783F00F2EFCD /* CurrentFestivalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFestivalModel.swift; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 				8A9E98A72BB20BFA00F2EFCD /* InfoViewModel.swift */,
 				8A9E98AB2BB20E3F00F2EFCD /* CurrentFestivalViewModel.swift */,
 				8A9E98B32BB2CE1700F2EFCD /* SlotsViewModel.swift */,
+				8A96F0F52BB32DCD00D78240 /* GameZoneViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 				8A9E98A52BB192BE00F2EFCD /* ProfileView.swift */,
 				8A9E98A92BB20D8500F2EFCD /* InfoView.swift */,
 				8A9E98AD2BB213BE00F2EFCD /* CurrentFestivalView.swift */,
+				8A96F0F72BB32ED500D78240 /* GameZoneView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -378,10 +384,12 @@
 				8A9E98982BB1783F00F2EFCD /* CurrentFestivalModel.swift in Sources */,
 				8A9E98AA2BB20D8500F2EFCD /* InfoView.swift in Sources */,
 				8AC985E12BA8A9E400A0F077 /* FDJeux_mobileApp.swift in Sources */,
+				8A96F0F82BB32ED500D78240 /* GameZoneView.swift in Sources */,
 				8A9E98A82BB20BFA00F2EFCD /* InfoViewModel.swift in Sources */,
 				8A9E989C2BB17B5000F2EFCD /* NewsView.swift in Sources */,
 				8A9E98A62BB192BE00F2EFCD /* ProfileView.swift in Sources */,
 				8A9E989E2BB1923200F2EFCD /* NavbarView.swift in Sources */,
+				8A96F0F62BB32DCD00D78240 /* GameZoneViewModel.swift in Sources */,
 				8AC986192BA8CDF700A0F077 /* RegisterView.swift in Sources */,
 				8AC986132BA8B5B100A0F077 /* UserModel.swift in Sources */,
 				8A9E98AE2BB213BE00F2EFCD /* CurrentFestivalView.swift in Sources */,
