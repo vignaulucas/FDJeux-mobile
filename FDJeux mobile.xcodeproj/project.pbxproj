@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A96F0F42BB32C6500D78240 /* GameZoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A96F0F32BB32C6500D78240 /* GameZoneModel.swift */; };
 		8A9E98942BB177CD00F2EFCD /* InfosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98932BB177CD00F2EFCD /* InfosModel.swift */; };
 		8A9E98962BB1781A00F2EFCD /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98952BB1781A00F2EFCD /* NewsModel.swift */; };
 		8A9E98982BB1783F00F2EFCD /* CurrentFestivalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98972BB1783F00F2EFCD /* CurrentFestivalModel.swift */; };
@@ -22,6 +23,8 @@
 		8A9E98AC2BB20E3F00F2EFCD /* CurrentFestivalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98AB2BB20E3F00F2EFCD /* CurrentFestivalViewModel.swift */; };
 		8A9E98AE2BB213BE00F2EFCD /* CurrentFestivalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98AD2BB213BE00F2EFCD /* CurrentFestivalView.swift */; };
 		8A9E98B02BB2329300F2EFCD /* SlotsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98AF2BB2329200F2EFCD /* SlotsModel.swift */; };
+		8A9E98B42BB2CE1700F2EFCD /* SlotsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A9E98B32BB2CE1700F2EFCD /* SlotsViewModel.swift */; };
+		8A9E98B72BB2DDE000F2EFCD /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8A9E98B62BB2DDE000F2EFCD /* CalendarKit */; };
 		8AC985E12BA8A9E400A0F077 /* FDJeux_mobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC985E02BA8A9E400A0F077 /* FDJeux_mobileApp.swift */; };
 		8AC985E32BA8A9E400A0F077 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC985E22BA8A9E400A0F077 /* ContentView.swift */; };
 		8AC985E52BA8A9E600A0F077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC985E42BA8A9E600A0F077 /* Assets.xcassets */; };
@@ -55,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A96F0F32BB32C6500D78240 /* GameZoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameZoneModel.swift; sourceTree = "<group>"; };
 		8A9E98932BB177CD00F2EFCD /* InfosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfosModel.swift; sourceTree = "<group>"; };
 		8A9E98952BB1781A00F2EFCD /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		8A9E98972BB1783F00F2EFCD /* CurrentFestivalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFestivalModel.swift; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 		8A9E98AB2BB20E3F00F2EFCD /* CurrentFestivalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFestivalViewModel.swift; sourceTree = "<group>"; };
 		8A9E98AD2BB213BE00F2EFCD /* CurrentFestivalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentFestivalView.swift; sourceTree = "<group>"; };
 		8A9E98AF2BB2329200F2EFCD /* SlotsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsModel.swift; sourceTree = "<group>"; };
+		8A9E98B32BB2CE1700F2EFCD /* SlotsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotsViewModel.swift; sourceTree = "<group>"; };
 		8AC985DD2BA8A9E400A0F077 /* FDJeux mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FDJeux mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC985E02BA8A9E400A0F077 /* FDJeux_mobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJeux_mobileApp.swift; sourceTree = "<group>"; };
 		8AC985E22BA8A9E400A0F077 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A9E98B72BB2DDE000F2EFCD /* CalendarKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +119,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A9E98B82BB2DFDC00F2EFCD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		8AC985D42BA8A9E400A0F077 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +149,7 @@
 		8AC985DF2BA8A9E400A0F077 /* FDJeux mobile */ = {
 			isa = PBXGroup;
 			children = (
+				8A9E98B82BB2DFDC00F2EFCD /* Controllers */,
 				8AC9860D2BA8AEDD00A0F077 /* Views */,
 				8AC9860C2BA8AE8800A0F077 /* ViewModels */,
 				8AC9860B2BA8AE7F00A0F077 /* Models */,
@@ -182,6 +196,7 @@
 				8A9E98952BB1781A00F2EFCD /* NewsModel.swift */,
 				8A9E98972BB1783F00F2EFCD /* CurrentFestivalModel.swift */,
 				8A9E98AF2BB2329200F2EFCD /* SlotsModel.swift */,
+				8A96F0F32BB32C6500D78240 /* GameZoneModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,6 +208,7 @@
 				8A9E98992BB1792600F2EFCD /* NewsViewModel.swift */,
 				8A9E98A72BB20BFA00F2EFCD /* InfoViewModel.swift */,
 				8A9E98AB2BB20E3F00F2EFCD /* CurrentFestivalViewModel.swift */,
+				8A9E98B32BB2CE1700F2EFCD /* SlotsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -230,6 +246,9 @@
 			dependencies = (
 			);
 			name = "FDJeux mobile";
+			packageProductDependencies = (
+				8A9E98B62BB2DDE000F2EFCD /* CalendarKit */,
+			);
 			productName = "FDJeux mobile";
 			productReference = 8AC985DD2BA8A9E400A0F077 /* FDJeux mobile.app */;
 			productType = "com.apple.product-type.application";
@@ -302,6 +321,9 @@
 				Base,
 			);
 			mainGroup = 8AC985D42BA8A9E400A0F077;
+			packageReferences = (
+				8A9E98B52BB2DDE000F2EFCD /* XCRemoteSwiftPackageReference "CalendarKit" */,
+			);
 			productRefGroup = 8AC985DE2BA8A9E400A0F077 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -352,6 +374,7 @@
 				8AC985E32BA8A9E400A0F077 /* ContentView.swift in Sources */,
 				8A9E98A42BB192B100F2EFCD /* HomeView.swift in Sources */,
 				8A9E98962BB1781A00F2EFCD /* NewsModel.swift in Sources */,
+				8A9E98B42BB2CE1700F2EFCD /* SlotsViewModel.swift in Sources */,
 				8A9E98982BB1783F00F2EFCD /* CurrentFestivalModel.swift in Sources */,
 				8A9E98AA2BB20D8500F2EFCD /* InfoView.swift in Sources */,
 				8AC985E12BA8A9E400A0F077 /* FDJeux_mobileApp.swift in Sources */,
@@ -363,6 +386,7 @@
 				8AC986132BA8B5B100A0F077 /* UserModel.swift in Sources */,
 				8A9E98AE2BB213BE00F2EFCD /* CurrentFestivalView.swift in Sources */,
 				8AC986112BA8B21700A0F077 /* URL.swift in Sources */,
+				8A96F0F42BB32C6500D78240 /* GameZoneModel.swift in Sources */,
 				8A9E98AC2BB20E3F00F2EFCD /* CurrentFestivalViewModel.swift in Sources */,
 				8A9E98A22BB1928200F2EFCD /* PlanPersoView.swift in Sources */,
 				8A9E98942BB177CD00F2EFCD /* InfosModel.swift in Sources */,
@@ -685,6 +709,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8A9E98B52BB2DDE000F2EFCD /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8A9E98B62BB2DDE000F2EFCD /* CalendarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A9E98B52BB2DDE000F2EFCD /* XCRemoteSwiftPackageReference "CalendarKit" */;
+			productName = CalendarKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8AC985D52BA8A9E400A0F077 /* Project object */;
 }

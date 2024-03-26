@@ -14,9 +14,9 @@ struct NavBarView: View {
 //            if selected == "calendar"{
 //                PlanningGeneralView()
 //            }
-//            if selected == "person"{
-//                PlanningPersoView()
-//            }
+            if selected == "person"{
+                PlanningPersoView()
+            }
             if selected == "gear"{
                 CustomProfileView()
             }
