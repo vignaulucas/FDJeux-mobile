@@ -7,18 +7,25 @@
 
 import Foundation
 
-struct Creneau : Codable {
+struct Creneau: Codable {
     var idCreneau: Int
     var LigneId: Int
     var JourId: Int
     var HoraireId: Int
     var idPlanning: Int
-    var date: String
     var ouvert: Bool
-    var heure_debut: Int
-    var heure_fin: Int
+    var heure_debut: String
+    var heure_fin: String
     var titre: String
     var nb_max: Int
     var nb_inscrit: Int
     var ReferentId: Int
+    
+}
+
+struct CreneauBenevole: Codable {
+    var idCreneauBenevole: Int
+    var idUser: Int
+    var idCreneau: Int
+    var isPresent: Int
 }

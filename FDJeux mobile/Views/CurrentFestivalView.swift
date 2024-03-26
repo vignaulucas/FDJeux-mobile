@@ -56,7 +56,6 @@ struct CurrentFestivalView: View {
     }
 
     private func fetchCurrentFestival() {
-        // Simulate API call to get user info
          fetchCurrentUser { result in
             handleUserResult(result)
         }
@@ -92,7 +91,6 @@ struct CurrentFestivalView: View {
     }
 
     private func registerForFestival(festivalId: Int) {
-        // Your registration logic here
         hasRegistered = true
     }
 }
