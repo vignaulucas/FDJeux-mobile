@@ -1,10 +1,11 @@
 import SwiftUI
 
 struct NavBarView: View {
-    var images : [String] = ["house","calendar","person", "gamecontroller", "gear"]
+    var images : [String] = ["house","calendar","person.text.rectangle", "gamecontroller", "person"]
     @State var selected = "house"
     @Namespace private var namespace
     var logoutAction: () -> Void
+    @StateObject var viewModel = SlotsViewModel()
 
     var body: some View {
         ZStack{
@@ -13,14 +14,15 @@ struct NavBarView: View {
             }
             if selected == "calendar"{
                 PlanningGeneralView()
+                .environmentObject(viewModel)
             }
-            if selected == "person"{
+            if selected == "person.text.rectangle"{
                 PlanningPersoView()
             }
             if selected == "gamecontroller" {
                 GameZoneView()
             }
-            if selected == "gear"{
+            if selected == "person"{
                 CustomProfileView()
             }
             navBar

@@ -33,7 +33,6 @@ class SlotsViewModel: ObservableObject {
                     self?.creneauxBenevoles = creneaux
                 }
             } catch {
-                print(String(data: data , encoding: .utf8) ?? "Données invalides")
                 print("Erreur lors du décodage des créneaux bénévoles: \(error.localizedDescription)")
             }
         }.resume()
@@ -66,7 +65,8 @@ class SlotsViewModel: ObservableObject {
     }
     
 
-    func InscriptionCreneauBenevole(idCreneau: Int, idUser: String, completion: @escaping (Result<Void, Error>) -> Void) {
+    func InscriptionCreneauBenevole(idCreneau: Int, idUser: Int, completion: @escaping (Result<Void, Error>) -> Void) {
+        
         let token = AuthenticationManager.shared.fetchToken()
         
         guard let token = token else {
@@ -83,7 +83,6 @@ class SlotsViewModel: ObservableObject {
             "idCreneau": idCreneau,
             "idUser": idUser
         ]
-        
         do {
             request.httpBody = try JSONSerialization.data(withJSONObject: requestData)
         } catch {
@@ -101,7 +100,8 @@ class SlotsViewModel: ObservableObject {
         }.resume()
     }
 
-    func DesinscriptionCreneauBenevole(idCreneau: Int, idUser: String, completion: @escaping (Result<Void, Error>) -> Void) {
+    func DesinscriptionCreneauBenevole(idCreneau: Int, idUser: Int, completion: @escaping (Result<Void, Error>) -> Void) {
+        
         let token = AuthenticationManager.shared.fetchToken()
         
         guard let token = token else {
@@ -137,7 +137,6 @@ class SlotsViewModel: ObservableObject {
     }
     
     func GetAllSlots(PlanningId: Int, completion: @escaping (Result<[Creneau], Error>) -> Void) {
-        print("Je suis bien dans GetAllSlots")
         
         let token = AuthenticationManager.shared.fetchToken()
         
