@@ -11,9 +11,9 @@ struct NavBarView: View {
             if selected == "house"{
                 HomeView()
             }
-//            if selected == "calendar"{
-//                PlanningGeneralView()
-//            }
+            if selected == "calendar"{
+                PlanningGeneralView()
+            }
             if selected == "person"{
                 PlanningPersoView()
             }
