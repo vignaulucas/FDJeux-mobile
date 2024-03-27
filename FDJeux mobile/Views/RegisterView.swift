@@ -30,7 +30,7 @@ struct RegisterView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color.blue
+                Color.blue.opacity(0.3).edgesIgnoringSafeArea(.all)
                     .ignoresSafeArea()
                 Circle()
                     .scale(1.7)

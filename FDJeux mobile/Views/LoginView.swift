@@ -32,14 +32,18 @@ struct LoginView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.green.opacity(0.3).edgesIgnoringSafeArea(.all)
+                Color.blue.opacity(0.3).edgesIgnoringSafeArea(.all)
+                    .ignoresSafeArea()
+                Circle()
+                    .scale(1.7)
+                    .foregroundColor(.white.opacity(0.15))
+                Circle()
+                    .scale(1.35)
+                    .foregroundColor(.white)
                 
-                VStack {
-                    Circle().scaleEffect(1.5).foregroundColor(.white.opacity(0.1))
-                    Circle().scaleEffect(1.2).foregroundColor(.white)
-                }
                 
                 VStack(spacing: 15) {
+                    
                     Text("Espace Membre").font(.title).fontWeight(.semibold)
                     
                     CustomTextField(placeholder: "Adresse e-mail", text: $userEmail, invalidIndicator: invalidEmailIndicator)
@@ -54,7 +58,6 @@ struct LoginView: View {
                     .background(Color.blue)
                     .cornerRadius(10)
                     
-                    // Bouton pour aller vers la page d'inscription
                     Button("Pas encore inscrit ?") {
                                     isShowingRegisterView = true
                                 }
@@ -64,7 +67,6 @@ struct LoginView: View {
                     .foregroundColor(.blue)
                     .padding()
                 }
-                // Déclencheur de navigation conditionnelle
                 .navigationDestination(for: NavigationDestination.self, destination: { destination in
                     switch destination {
                     case .register:
@@ -79,7 +81,6 @@ struct LoginView: View {
         loginUser()
     }
     
-    // Fonction pour récupérer les données de l'API
     func loginUser() {
         guard let url = URL(string: "\(urlAPI)/user/login") else {
             return
