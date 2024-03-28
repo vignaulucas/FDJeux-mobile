@@ -42,10 +42,10 @@ struct CurrentFestivalView: View {
     private func registrationStatusView(festivalId: Int) -> some View {
         Group {
             if hasRegistered {
-                Text("You're registered for this festival!")
-                    .padding()
-                    .background(Color.green.opacity(0.7))
-                    .cornerRadius(5)
+                Text("Inscrit")
+                    .foregroundColor(.green)
+                Image(systemName: "checkmark.circle.fill")
+                    .foregroundColor(.green)
             } else {
                 Button("Register") {
                     registerForFestival(festivalId: festivalId)
@@ -91,6 +91,7 @@ struct CurrentFestivalView: View {
     }
 
     private func registerForFestival(festivalId: Int) {
+        registerToCurrentFestival(idFestival: festivalId)
         hasRegistered = true
     }
 }
