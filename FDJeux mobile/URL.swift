@@ -7,4 +7,4 @@
 
 import Foundation
 
-var urlAPI : String = "https://festival-jeu-mtp-api.onrender.com"
+var urlAPI : String = "https://fdjeuxapi.onrender.com"
